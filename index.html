@@ -5,47 +5,70 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Projects - 24k_onlyy</title>
   <style>
-    /* Resetting default styles */
+    /* General Styles */
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
 
-    /* Body Styling */
     body {
       font-family: 'Arial', sans-serif;
-      color: #fff;
       background: linear-gradient(135deg, #2b2d42, #8d99ae);
-      text-align: center;
+      color: #fff;
       min-height: 100vh;
+      text-align: center;
       display: flex;
       flex-direction: column;
-      justify-content: center;
       align-items: center;
+      justify-content: center;
       padding: 20px;
+      overflow-x: hidden;
     }
 
-    /* Title and Intro */
+    /* Page Title */
     h1 {
       font-size: 3rem;
+      animation: fadeIn 1.5s ease-in-out;
       margin-bottom: 20px;
-      text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
     }
 
     p {
       font-size: 1.2rem;
       margin-bottom: 30px;
-      line-height: 1.6;
+      animation: fadeIn 1.5s ease-in-out;
     }
 
-    /* Project Section */
+    /* Navigation Buttons */
+    .nav-buttons {
+      margin-bottom: 40px;
+      display: flex;
+      gap: 20px;
+      animation: slideUp 1s ease-out;
+    }
+
+    .nav-buttons a {
+      text-decoration: none;
+      background: #ef233c;
+      color: #fff;
+      padding: 10px 20px;
+      font-weight: bold;
+      border-radius: 5px;
+      transition: background 0.3s ease, transform 0.3s ease;
+    }
+
+    .nav-buttons a:hover {
+      background: #d90429;
+      transform: scale(1.05);
+    }
+
+    /* Project Cards */
     .projects {
       display: grid;
       gap: 20px;
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       max-width: 1000px;
-      margin: 0 auto;
+      animation: fadeIn 1.5s ease-in-out;
     }
 
     .project-card {
@@ -62,19 +85,14 @@
     }
 
     .project-card h2 {
-      font-size: 1.5rem;
       margin-bottom: 10px;
-    }
-
-    .project-card p {
-      font-size: 1rem;
-      margin-bottom: 15px;
     }
 
     .project-card a {
       display: inline-block;
-      text-decoration: none;
+      margin-top: 10px;
       color: #fff;
+      text-decoration: none;
       background: #ef233c;
       padding: 8px 15px;
       border-radius: 5px;
@@ -90,29 +108,42 @@
     footer {
       margin-top: 30px;
       font-size: 0.9rem;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideUp {
+      from { transform: translateY(20px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
     }
   </style>
 </head>
 <body>
   <h1>Welcome to My Projects</h1>
-  <p>Hi! I'm 24k_onlyy, and I specialize in creating Discord bots and moderating servers.  
-  My projects are built to help communities grow and function smoothly. Let me know if I can help you!</p>
-  
+  <p>I create HTML websites, Discord bots, and moderate communities to help servers thrive!</p>
+
+  <!-- Navigation Buttons -->
+  <div class="nav-buttons">
+    <a href="about.html">About Me</a>
+    <a href="https://github.com/Acearooni10" target="_blank">GitHub</a>
+  </div>
+
+  <!-- Projects -->
   <div class="projects">
     <div class="project-card">
-      <h2>Custom Discord Bot</h2>
-      <p>A powerful bot designed to automate server moderation, manage roles, and engage the community.</p>
-      <a href="https://github.com/Acearooni10" target="_blank">View on GitHub</a>
+      <h2>Custom Discord Bots</h2>
+      <p>Building bots that manage moderation, roles, and make servers engaging.</p>
+      <a href="https://github.com/Acearooni10" target="_blank">View Project</a>
     </div>
     <div class="project-card">
-      <h2>Server Moderator</h2>
-      <p>Helping communities by managing rules, resolving conflicts, and creating a positive space for members.</p>
+      <h2>Moderating Servers</h2>
+      <p>Helping servers grow with rule enforcement and community management.</p>
       <a href="https://www.roblox.com/users/525015492/profile" target="_blank">More Info</a>
-    </div>
-    <div class="project-card">
-      <h2>Custom Features</h2>
-      <p>Developing unique commands for bots, such as modmail, economy systems, and custom status updates.</p>
-      <a href="https://github.com/Acearooni10" target="_blank">See Details</a>
     </div>
   </div>
 
