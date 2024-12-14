@@ -3,150 +3,70 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Projects - 24k_onlyy</title>
+  <title>24k_onlyy - About Me</title>
   <style>
-    /* General Styles */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
     body {
-      font-family: 'Arial', sans-serif;
-      background: linear-gradient(135deg, #2b2d42, #8d99ae);
-      color: #fff;
-      min-height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #141414;
+      color: white;
       text-align: center;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
+      background-image: url('logo.png'); /* Add your logo as a background */
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center top;
+    }
+    header {
       padding: 20px;
-      overflow-x: hidden;
+      margin-bottom: 50px;
     }
-
-    /* Page Title */
     h1 {
+      color: #f0c93f;
       font-size: 3rem;
-      animation: fadeIn 1.5s ease-in-out;
-      margin-bottom: 20px;
     }
-
     p {
+      margin-top: 20px;
       font-size: 1.2rem;
-      margin-bottom: 30px;
-      animation: fadeIn 1.5s ease-in-out;
     }
-
-    /* Navigation Buttons */
-    .nav-buttons {
-      margin-bottom: 40px;
-      display: flex;
-      gap: 20px;
-      animation: slideUp 1s ease-out;
+    .button-container {
+      margin-top: 30px;
     }
-
-    .nav-buttons a {
+    .button {
+      display: inline-block;
+      margin: 10px;
+      padding: 15px 30px;
+      font-size: 1rem;
+      color: white;
+      background: linear-gradient(90deg, #f0c93f, #e5b700);
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
       text-decoration: none;
-      background: #ef233c;
-      color: #fff;
-      padding: 10px 20px;
-      font-weight: bold;
-      border-radius: 5px;
-      transition: background 0.3s ease, transform 0.3s ease;
     }
-
-    .nav-buttons a:hover {
-      background: #d90429;
+    .button:hover {
+      background: linear-gradient(90deg, #e5b700, #f0c93f);
       transform: scale(1.05);
     }
-
-    /* Project Cards */
-    .projects {
-      display: grid;
-      gap: 20px;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      max-width: 1000px;
-      animation: fadeIn 1.5s ease-in-out;
-    }
-
-    .project-card {
-      background: rgba(255, 255, 255, 0.1);
-      border-radius: 8px;
-      padding: 20px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    .project-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
-    }
-
-    .project-card h2 {
-      margin-bottom: 10px;
-    }
-
-    .project-card a {
-      display: inline-block;
-      margin-top: 10px;
-      color: #fff;
-      text-decoration: none;
-      background: #ef233c;
-      padding: 8px 15px;
-      border-radius: 5px;
-      font-weight: bold;
-      transition: background 0.3s ease;
-    }
-
-    .project-card a:hover {
-      background: #d90429;
-    }
-
-    /* Footer */
     footer {
-      margin-top: 30px;
+      margin-top: 50px;
       font-size: 0.9rem;
-      animation: fadeIn 2s ease-in-out;
-    }
-
-    /* Animations */
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
-    }
-
-    @keyframes slideUp {
-      from { transform: translateY(20px); opacity: 0; }
-      to { transform: translateY(0); opacity: 1; }
     }
   </style>
 </head>
 <body>
-  <h1>Welcome to My Projects</h1>
-  <p>I create HTML websites, Discord bots, and moderate communities to help servers thrive!</p>
+  <header>
+    <h1>Welcome to 24k_onlyy's Website</h1>
+  </header>
 
-  <!-- Navigation Buttons -->
-  <div class="nav-buttons">
-    <a href="about.html">About Me</a>
-    <a href="https://github.com/Acearooni10" target="_blank">GitHub</a>
+  <p>Hi, I'm 24k_onlyy. I make Discord bots, mod servers, and enjoy helping communities grow. Let's collaborate and build something awesome!</p>
+  
+  <div class="button-container">
+    <a href="https://discord.com/users/1040786110353256568" class="button">DM Me on Discord</a>
+    <a href="about.html" class="button">Learn More About Me</a>
   </div>
-
-  <!-- Projects -->
-  <div class="projects">
-    <div class="project-card">
-      <h2>Custom Discord Bots</h2>
-      <p>Building bots that manage moderation, roles, and make servers engaging.</p>
-      <a href="https://github.com/Acearooni10" target="_blank">View Project</a>
-    </div>
-    <div class="project-card">
-      <h2>Moderating Servers</h2>
-      <p>Helping servers grow with rule enforcement and community management.</p>
-      <a href="https://discord.com/users/1040786110353256568" target="_blank">More Info</a>
-    </div>
-  </div>
-
-  <footer>© 2024 24k_onlyy. All rights reserved.</footer>
+  
+  <footer>
+    © 2024 24k_onlyy. All rights reserved.
+  </footer>
 </body>
 </html>
